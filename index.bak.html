@@ -1,0 +1,1361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>POC SECURITY</title>
+    <meta name="description" content="POC SECURITY">
+    <meta name="keywords" content="POC SECURITY, POCSEC, POC, PWNFEST, Zer0Con, Belluminar">
+    <meta name="author" content="rootack">
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Slider
+    ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+  </head>
+  <body>
+    <!-- Navigation
+    ==========================================-->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index"><img src="img/mainscreen.png" width="210"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#tf-home" class="page-scroll">Home</a></li>
+            <li><a href="#tf-about" class="page-scroll">About</a></li>
+
+            <li><a href="#tf-news" class="page-scroll">News</a></li>
+
+            
+            <li>
+                  <a id="dLabel" data-target="#" href="##" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Services
+                  
+                  </a>
+
+                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="#tf-works" class="page-scroll"><font color="#fff">Overview</font></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#pocsec2"><font color="#fff">POC</font></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#pocsec4"><font color="#fff">Hackingcamp</font></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#pocsec5"><font color="#fff">Training</font></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#pocsec3"><font color="#fff">Zer0Con</font></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#pocsec1"><font color="#fff">Consulting</font></a></li>
+                      </ul>
+            </li>
+
+            <li><a href="#tf-testimonials" class="page-scroll">Recruit</a></li>
+            <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
+
+          </ul>
+
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--Modal Window
+    ==========================================-->    
+<!-- Consulting-->
+<div class="modal fade" id="pocsec1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Consulting</h4>
+      </div>
+      <div class="modal-body">
+        We offer comprehensive security-related information for our clients. This service is divided as two levels. The top level of this service is only available for trusted organizations. We have a strict criteria for this service owing to some sensitive contents. <br /><br />
+        Our consulting services are based on more than 10 years of research. There is a difference in the depth of information provided according to the service level. 
+        <br /><br />If you want this service or have some questions, contact us.
+        <br />
+        <ul class="about-list text-left">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Email</strong> - <em>contact [at] pocsec.com (<a href="./files/contact.asc" target="_blank">PGP key</a>)</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>TEL</strong> - <em>+82-2-446-3156</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>FAX</strong> - <em>+82-2-446-3159</em>
+                            </li>
+        </ul>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- POC-->
+<div class="modal fade" id="pocsec2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">POC</h4>
+      </div>
+      <div class="modal-body">
+        <p align="center"><img src="https://powerofcommunity.net/img/poclogo.png" width="150"></p>
+        POC is established in 2006 and organized by Korean security experts. POC is an international security & hacking conference based in South Korea which focuses on highly technical academics and sharing creative discussions on latest hacking and security measures. The talks at POC conference shares variety of topics from vulnerability discovery, advanced exploitation on numerous softwares and outpouring of remarkable new ideas.<br />
+        POC unlocks your intense appetite for sharing desires and passion for hacking and believes that the Power of Community will definitely contribute to the world the better way.<br />
+        <br /><br /><h3>  <strong>POC 2023</strong></h3>
+        <ul class="about-list text-left">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>일시</strong>: Nov 2 ~ 3, 2023
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>모집기간</strong>: Sep 1 ~ Oct 25, 2023
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>장소</strong>: Grand Ballroom, FOUR SEASONS HOTEL SEOUL
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>웹사이트</strong>: <a href="https://powerofcommunity.net/" target="_blank">https://powerofcommunity.net/</a>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>등록방법</strong>: 등록 후 결제 페이지를 통해 결제해주세요.
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                           <strong>서비스 제공 기간</strong>: 컨퍼런스 진행일
+                          </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                           <strong>환불정책</strong>: 원칙적으로 등록 후 결제가 진행되었을시 환불이 불가합니다. 특별한 사정이 있는 경우 공식 메일을 통해 접수 부탁드립니다.
+                          </li>
+        </ul>
+
+<br /><br />
+<table class="table table-bordered">
+            <tr class="info">
+              <th width="150"></th>
+              <th width="200"><b>Early Bird(9.1 ~ 9.30)</font></b></th>
+              <th width="200"><b>Late(10.1 ~ 10.25)</font></b></th>  
+              <th width="200"><b>On Site(11.2 ~ 11.3) </font></b></th>         
+             
+            </tr>
+
+            <tr>
+              <td class="info"><b>학생</b></td>
+              <td><i class="fa fa-krw">300,000</i> </td>
+              <td><i class="fa fa-krw">400,000</i> </td>
+              <td><i class="fa fa-krw">500,000</i> </td>
+          
+            </tr>
+
+            <tr>
+              <td class="info"><b>일반</b></td>
+              <td><i class="fa fa-krw"></i>800,000</td>
+              <td><i class="fa fa-krw"></i>900,000</td>
+              <td><i class="fa fa-krw"></i>1,000,000</td>
+            
+            </tr>
+            
+            <tr>
+              <td class="info"><b>외국인</b></td>
+              <td>$800</td>
+              <td>$900</td>
+              <td>$1,000</td>
+             
+            </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <a href="https://forms.gle/etPtgZCLzZbafvAb8" target="_blank" class="btn btn-default" role="button">등록</a>
+        <a href="https://pocsec.com/payment_poc_test.htm" target="_blank" class="btn btn-default" role="button">결제</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Zer0Con-->
+<div class="modal fade" id="pocsec3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Zer0Con</h4>
+      </div>
+      <div class="modal-body">
+        <p align="center">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           width="300px" height="70px" viewBox="0 0 125 35" enable-background="new 0 0 125 35" xml:space="preserve">
+                        <g>
+                          <path fill="#D8D8D8" d="M6.795,23.987h8.535c0.24,0,0.425-0.063,0.553-0.19c0.128-0.128,0.232-0.355,0.312-0.683h0.385v4.817
+                            h-0.385c-0.08-0.327-0.184-0.555-0.312-0.682c-0.128-0.128-0.312-0.191-0.553-0.191H0.986v-0.955L10.523,11.5H2.319
+                            c-0.248,0-0.437,0.062-0.564,0.187c-0.128,0.125-0.232,0.354-0.312,0.686H1.058V7.556h0.385c0.088,0.332,0.194,0.56,0.318,0.685
+                            c0.124,0.125,0.31,0.188,0.559,0.188h14.129v0.778L6.795,23.987z"/>
+                          <path fill="#D8D8D8" d="M22.731,20.562v3.726h8.542c0.248,0,0.438-0.062,0.571-0.188c0.132-0.125,0.238-0.354,0.318-0.685H32.5
+                            v4.517h-0.336c-0.072-0.318-0.176-0.543-0.312-0.675c-0.136-0.133-0.329-0.198-0.577-0.198H18.743v-0.382
+                            c0.28-0.082,0.479-0.2,0.595-0.355c0.116-0.154,0.174-0.373,0.174-0.655V13.165c0-0.282-0.056-0.496-0.168-0.642
+                            c-0.112-0.146-0.312-0.268-0.601-0.369v-0.382h12.159c0.256,0,0.451-0.064,0.583-0.191c0.132-0.127,0.238-0.354,0.318-0.682h0.324
+                            v4.518h-0.324c-0.081-0.332-0.187-0.56-0.318-0.686c-0.132-0.125-0.327-0.188-0.583-0.188h-8.17v3.357h5.07
+                            c0.248,0,0.438-0.063,0.571-0.191c0.132-0.127,0.242-0.354,0.33-0.682h0.325v4.408h-0.325c-0.08-0.322-0.186-0.549-0.318-0.679
+                            c-0.132-0.13-0.326-0.194-0.583-0.194H22.731z"/>
+                          <path fill="#D8D8D8" d="M38.519,20.78v4.875c0,0.281,0.056,0.497,0.168,0.646c0.112,0.15,0.312,0.274,0.601,0.375v0.382H34.53
+                            v-0.382c0.28-0.082,0.479-0.2,0.595-0.355c0.116-0.154,0.174-0.373,0.174-0.655V13.165c0-0.282-0.056-0.496-0.168-0.642
+                            c-0.112-0.146-0.312-0.268-0.601-0.369v-0.382h8.819c1.145,0,2.019,0.066,2.619,0.198s1.137,0.371,1.61,0.716
+                            c0.969,0.719,1.454,1.893,1.454,3.521c0,1.237-0.298,2.204-0.895,2.9s-1.56,1.199-2.889,1.509l2.547,4.03
+                            c0.464,0.744,0.835,1.251,1.111,1.519s0.59,0.438,0.943,0.511v0.382h-5.659v-0.382c0.417-0.127,0.626-0.331,0.626-0.613
+                            c0-0.199-0.129-0.503-0.386-0.912l-2.688-4.371H38.519z M38.519,18.01h4.854c0.737,0,1.281-0.091,1.634-0.273
+                            c0.497-0.246,0.745-0.732,0.745-1.46c0-0.646-0.174-1.097-0.522-1.352c-0.349-0.254-0.967-0.382-1.856-0.382h-4.854V18.01z"/>
+                          <path fill="#EEA754" d="M59.01,5.833c2.156,0,3.948,0.984,5.374,2.952c1.604,2.215,2.405,5.257,2.405,9.125
+                            c0,1.216-0.12,2.446-0.361,3.694c-0.24,1.248-0.568,2.335-0.985,3.256c-0.729,1.619-1.691,2.85-2.886,3.693
+                            c-1.058,0.743-2.236,1.113-3.535,1.113c-2.156,0-3.943-0.987-5.362-2.968c-0.682-0.956-1.21-2.036-1.587-3.239
+                            c-0.545-1.776-0.817-3.683-0.817-5.718c0-2.744,0.449-5.116,1.347-7.118c0.705-1.586,1.667-2.811,2.886-3.677
+                            C56.497,6.227,57.671,5.856,59.01,5.833z M59.01,9.747c-1.275,0-2.291,0.792-3.044,2.378c-0.698,1.474-1.046,3.301-1.046,5.483
+                            c0,2.181,0.349,4.008,1.046,5.481c0.754,1.586,1.773,2.379,3.056,2.379c1.292,0,2.311-0.793,3.056-2.379
+                            c0.698-1.473,1.047-3.267,1.047-5.38c0-2.283-0.35-4.145-1.047-5.584C61.332,10.562,60.309,9.769,59.01,9.747z"/>
+                          <path fill="#EEA754" d="M82.671,20.657l2.282,3.883l-0.312,0.247c-0.224-0.237-0.408-0.355-0.552-0.355
+                            c-0.145,0-0.549,0.219-1.214,0.656c-1.378,0.902-2.537,1.512-3.479,1.826s-2.061,0.472-3.357,0.472
+                            c-2.588,0-4.71-0.695-6.368-2.088c-0.978-0.81-1.746-1.815-2.307-3.016c-0.648-1.374-0.973-2.889-0.973-4.545
+                            c0-2.256,0.58-4.217,1.741-5.882c1.746-2.502,4.386-3.753,7.918-3.753c1.298,0,2.411,0.155,3.34,0.464
+                            c0.93,0.31,2.091,0.919,3.484,1.829c0.665,0.428,1.069,0.641,1.214,0.641c0.144,0,0.328-0.118,0.552-0.354l0.312,0.246l-2.282,3.89
+                            l-0.324-0.245c0.016-0.145,0.023-0.267,0.023-0.367c0-0.263-0.1-0.51-0.3-0.741c-0.2-0.231-0.557-0.51-1.069-0.836
+                            c-1.418-0.906-2.92-1.36-4.506-1.36c-1.874,0-3.368,0.532-4.481,1.595c-1.313,1.246-1.97,2.873-1.97,4.881
+                            c0,2.009,0.656,3.636,1.97,4.881c1.113,1.063,2.607,1.595,4.481,1.595c1.586,0,3.088-0.455,4.506-1.364
+                            c0.513-0.328,0.869-0.607,1.069-0.84s0.3-0.479,0.3-0.744c0-0.1-0.008-0.218-0.023-0.354L82.671,20.657z"/>
+                          <path fill="#D8D8D8" d="M94.691,11.445c2.14,0,3.923,0.619,5.351,1.856c1.707,1.492,2.561,3.571,2.561,6.237
+                            c0,2.503-0.854,4.5-2.561,5.992c-1.411,1.237-3.187,1.855-5.327,1.855c-2.14,0-3.916-0.618-5.326-1.855
+                            c-1.716-1.492-2.573-3.53-2.573-6.114c0-2.612,0.857-4.649,2.573-6.115C90.808,12.091,92.575,11.473,94.691,11.445z M94.703,14.338
+                            c-1.388,0-2.519,0.505-3.393,1.515c-0.811,0.946-1.215,2.134-1.215,3.562c0,1.419,0.404,2.602,1.215,3.548
+                            c0.874,1.02,2.009,1.529,3.404,1.529c1.388,0,2.519-0.51,3.393-1.529c0.81-0.937,1.215-2.097,1.215-3.479
+                            c0-1.502-0.405-2.712-1.215-3.631C97.226,14.862,96.09,14.357,94.703,14.338z"/>
+                          <path fill="#D8D8D8" d="M108.357,16.986v8.668c0,0.282,0.058,0.5,0.174,0.654s0.314,0.277,0.595,0.368v0.382h-4.469v-0.382
+                            c0.28-0.082,0.479-0.2,0.595-0.355c0.115-0.154,0.174-0.373,0.174-0.655V13.165c0-0.282-0.056-0.496-0.168-0.642
+                            s-0.312-0.268-0.601-0.369v-0.382h5.168v0.382c-0.353,0.101-0.529,0.278-0.529,0.532c0,0.219,0.129,0.473,0.385,0.765l7.219,8.134
+                            v-8.421c0-0.282-0.056-0.499-0.168-0.648s-0.312-0.271-0.601-0.362v-0.382h4.469v0.382c-0.288,0.091-0.488,0.211-0.601,0.361
+                            c-0.112,0.15-0.168,0.366-0.168,0.648v12.49c0,0.281,0.056,0.497,0.168,0.647s0.312,0.274,0.601,0.375v0.382h-4.819v-0.382
+                            c0.353-0.081,0.529-0.248,0.529-0.501c0-0.127-0.049-0.258-0.145-0.393c-0.096-0.136-0.316-0.402-0.661-0.799L108.357,16.986z"/>
+                        </g>
+                        <line stroke="#EEA754" stroke-width="3" stroke-miterlimit="10" x1="59.002" y1="9.167" x2="59.04" y2="26.333"/>
+                        </svg>
+                      </p>
+                        <br />
+                        Zer0Con은 POC에서 운영하는 비공개 국제 보안 컨퍼런스입니다. Zer0Con은 취약점을 찾고, 분석하고, 익스플로잇하는 것에 초점을 맞추고 있는 컨퍼런스로 고수준의 기술 발표를 목표로 하고 있습니다.
+<br />
+∙ 하이레벨 비공개 컨퍼런스 
+∙ 취약점 발견, 분석, 익스플로잇에 초점을 맞춥니다. 
+∙ 발표된 취약점 정보는 발표자, 참석자, 스폰서에게만 공유합니다.
+∙ Zer0Con 참석자들은 다양한 정보를 공유하고, 컨퍼런스를 바탕으로 유니크한 커뮤니티를 만들 수 있습니다.
+∙ 트레이닝 코스 역시 취약점 발견, 분석, 익스플로잇에 초점을 맞춥니다. 
+∙ 만약 당신이 버그를 찾고 익스플로잇 코드를 만들 수 있는 능력이 있다면, 당신은 Zer0Con을 통해 그 능력을 더욱 발전시킬 숭수 있을 것입니다.<br />
+<br /><br /><h3>  <strong>Zer0Con2024</strong></h3>
+        <ul class="about-list text-left">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>일시</strong>: 미정
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>모집기간</strong>: 미정
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>장소</strong>: 미정
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>금액</strong>: 미정
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>홈페이지</strong>: <a href="https://zer0con.org/" target="_blank">https://zer0con.org/</a>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                           <strong>서비스 제공 기간</strong>: 컨퍼런스 진행일
+                          </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                           <strong>환불정책</strong>: 원칙적으로 등록 후 결제가 진행되었을시 환불이 불가합니다. 특별한 사정이 있는 경우 공식 메일을 통해 접수 부탁드립니다.
+                          </li>
+        </ul>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <a href="#" onclick="zer0con_reg()" class="btn btn-default" role="button"><s>등록</s></a>
+	<script>
+		function zer0con_reg(){
+			alert("등록기간이 끝났습니다. 내년에 찾아뵙겠습니다.");
+		}
+	</script>
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hackingcamp-->
+<div class="modal fade" id="pocsec4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Hackingcamp</h4>
+      </div>
+      <div class="modal-body">
+        <p align="center"><img src="img/services/hackingcamplogo.png" width="150"></p>
+        해킹캠프는 해킹과 보안에 관심을 가지고 있는 국내 학생들을 위해 국제 해킹·보안 컨퍼런스 POC(POC SECURITY 주관)가 운영하는 해킹·보안 캠프입니다.
+해킹캠프는 2009년 POC가 해커스쿨과 함께 국내 중·고·대학생을 대상으로 진행한 순수 비영리 캠프(단, 교통비, 숙박비, 식사비는 본인 부담)입니다.
+해킹캠프가 뛰어난 해커를 발굴하고 양성하는데 기여할 수 있기를 기대하며, 해킹과 보안에 관심이 있는 학생들의 많은 참여 바랍니다.
+
+                        <h4><i class="fa fa-cubes"></i> 스스로 나아가기</h4>
+
+                        <p>재미있는 해킹·보안 교육과 실습, 그리고 각종 이벤트들을 통해 학생들이 스스로 올바른 해커가 되는 길을 찾아갈 수 있도록 도와주는 것을 주된 목적</p>
+
+                        <h4><i class="fa fa-cubes"></i> 연 2회 개최</h4>
+
+                        <p>해킹캠프는 학생들의 여름(하계), 겨울(동계) 방학 기간에 열리며 매년 2회, 1박 2일 캠프 형식으로 진행됩니다.</p>
+
+
+                        <h4><i class="fa fa-cubes"></i> 발자취</h4>
+
+                        <p>해킹캠프를 통해 성장한 해커들은 데프콘 CTF 본선 참가 등 국내·외 각종 해킹대회에서도 입상하고 있으며, 사회에 진출하여 보안발전을 위해 기여하고 있습니다.</p>
+
+
+
+<br /><br /><h3>  <strong>27회 하계 해킹캠프</strong></h3>
+        <ul class="about-list text-left">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Date</strong>: 2023년 8월 26일 ~ 27일
+                            </li>
+
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>모집 일정</strong>: 2023년 7월 10일 ~ 8월 15일
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>장소</strong>: 서울 영등포 하이서울유스호스텔
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>등록비용</strong>: 10만원
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>웹사이트</strong>: <a href="http://hackingcamp.org/" target="_blank">http://hackingcamp.org/</a>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>신청방법</strong>: 공식 홈페이지를 통해 신청하면, 운영진 측이 검토를 통해 확정된 분에게 메일을 드립니다.
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                           <strong>서비스 제공 기간</strong>: 캠프 진행일
+                          </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                           <strong>환불정책</strong>: 원칙적으로 등록 후 결제가 진행되었을시 환불이 불가합니다. 특별한 사정이 있는 경우 공식 메일을 통해 접수 부탁드립니다.
+                          </li>
+        </ul>    
+
+      </div>
+      <div class="modal-footer">
+        <a href="#" onclick="hackingcamp_reg()" target="_blank" class="btn btn-default" role="button">등록</a>
+        <a href="#" onclick="hackingcamp_reg()" target="_blank" class="btn btn-default" role="button">결제</a>
+        
+	<script>
+                function hackingcamp_reg(){
+                        alert("등록기간이 끝났습니다. 2024년 동계 해킹캠프에 찾아뵙겠습니다.");
+                }
+        </script>
+	<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Training-->
+<div class="modal fade" id="pocsec5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Training</h4>
+      </div>
+      <div class="modal-body">
+        POC에서는 연구원들의 기술 향상 및 해외 최신 기술 도입을 위해 정기/비정기 기술 트레이닝을 진행하고 있습니다. 
+<h3>  <strong>POC2023 Trainings</strong></h3>
+        <!-- 트레이닝 테이블 -->
+            <table class="table table-bordered">
+                     <tr class="info">
+                     <th width="80"><font color="#fff"><center>WHEN</center></font></th>
+                     <th width="100"><font color="#fff"><center>TRAINER</center></font></th>
+                    <th><font color="#fff"><center>SUBJECT</center></font>
+                     </th>
+                     <th width="110"><font color="#fff"><center>FEE</center></font></th>
+
+                     </tr>                                           <!--Tra #1-->
+
+
+                     <tr>
+                       <td>2023.10.29 ~ 11.01</td>
+                       <td>Prateek Gianchandani & Dinesh (8ksec)</td>
+                       <td><a href="https://powerofcommunity.net/Training/T23_Prateek.pdf" target="_blank">Mobile Security Masterclass: Platform Internals and InSecurity(4-days course)</a></td>
+                      <td class="text-center"><i class="fa fa-krw"></i> 4,500,000</td>
+                    </tr>
+
+
+                     <tr>
+                       <td>2023.10.29 ~ 11.01</td>
+                       <td>Dawid Czagan</td>
+                       <td><a href="https://powerofcommunity.net/Training/T23_Dawid.pdf" target="_blank">Black Belt Pentesting / Bug Hunting Millionaire: Mastering Web Attacks with Full-Stack Exploitation (100% Hands-On, Extended Edition)(4-days course)</a></td>
+                      <td class="text-center"><i class="fa fa-krw"></i> 4,500,000</td>
+                    </tr>
+
+                    
+                                </table>
+                                <p class="text-right">* USD -> KRW: Exchange rate applied as of August 1st</p>
+
+<br />
+        <h4>  <strong>이전 트레이닝</strong></h4><br />
+        * Ashfaq, "Windows Kernel Exploitation Advanced"<br />
+        * Vitaly Nikolenko, "Linux Kernel Exploitation"<br />
+        * Prateek & Dinesh, "Android internals and Application Security"
+
+
+
+      </div>
+      <div class="modal-footer">
+        <a href="https://forms.gle/7T2QJ2pbsFsKfVZe9" target="_blank" class="btn btn-default" role="button">등록</a>
+        <a href="https://pocsec.com/payment_training_test.htm" target="_blank" class="btn btn-default" role="button">결제</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- Home Page
+    ==========================================-->
+    <div id="tf-home" class="text-center">
+        <div class="overlay">
+            <div class="content">
+                <h1>Welcome to <strong><span class="color">POC SECURITY</span></strong></h1>
+                <p class="lead">Name of <strong>New Generation</strong> in Security!</strong></p>
+                <a href="#tf-about" POC SECURITY, Name of New Generation in Security!class="fa fa-angle-down page-scroll"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Page
+    ==========================================-->
+    <div id="tf-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/01.png" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                       
+                            <h2><strong>about us</strong></h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">
+
+POC Security is a cyber security research and consulting company based in Seoul, South Korea. We conduct various cyber security researches. We also have conferences and training courses based on the basic policy that offense should come first than defense for the sake of security. 
+
+In addition to the highly technical conference POC running for more than 10 years, we have MOSEC for mobile security, PwnFest as a bug bounty contest, Zer0Con for exploit development and bug hunting, Belluminar as a new concept of hacking contest, and Hacking Camp for youth. With these, we are trying to deepen security techniques in all areas of society and broaden the bases.   
+</p>
+                        <ul class="about-list">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <em>POC SECURITY, Name of <strong>New Generation</strong> in Security!</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <em>POC SECURITY is here for the <strong>Freedom</strong> of you!</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <em>POC SECURITY is trying to make <strong>New Paradigm</strong> of security!</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Clients Section
+    ==========================================-->
+    <div id="tf-news" class="text-center">
+        <div class="overlay">
+            <div class="container">
+
+                <div class="section-title center">
+                    <h2>Latest <strong>NEWS</strong></h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+<br><br>
+<div class="row">
+ <!-- -->
+<div class="col-md-4">                
+                   
+            <div class="media text-left">
+              <div class="media-left">
+                <a href="http://hackingcamp.org" target="_blank">
+                  <img class="media-object" src="./img/news/hackingcamp01.jpg" width="64px" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Hackingcamp Winter</h4>
+                POC Security to host Hackingcamp on Feb 11~12<br>
+                <em><small>- Jan 4, 2023</small></em>
+
+              </div>
+            </div>
+                    
+</div>
+<!-- -->
+<!-- -->
+<div class="col-md-4">                
+                  
+            <div class="media text-left">
+              <div class="media-left">
+                <a href="http://zer0con.org" target="_blank">
+                  <img class="media-object" src="./img/news/zer0con.jpg" width="64px" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Zer0Con</h4>
+                Zer0Con to be held on April 13 ~ 14<br>
+                <em><small>- Jan 4, 2023</small></em>
+
+              </div>
+            </div>
+                    
+</div>
+<!-- -->
+<!-- -->
+
+<div class="col-md-4">                
+                  
+            <div class="media text-left">
+              <div class="media-left">
+                <a href="./img/news/mosec.png" target="_blank">
+                  <img class="media-object" src="./img/news/mosec.png" width="64px" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Mosec</h4>
+                POC Security and Pangu Team to host MOSEC2021 on Sep 26. <br>
+                <em><small>- May 4, 2023</small></em>
+
+              </div>
+            </div>
+                    
+</div>
+<!-- -->
+</div>
+<br><br>
+<div class="row">
+<!-- -->
+<div class="col-md-4">                
+                   
+            <div class="media text-left">
+              <div class="media-left">
+                <a href="http://hackingcamp.org" target="_blank">
+                  <img class="media-object" src="./img/news/hackingcamp01.jpg" width="64px" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Hackingcamp Summer</h4>
+                POC Security to host Hackingcamp on Aug 26~27<br>
+                <em><small>- May 4, 2023</small></em>
+
+              </div>
+            </div>
+                    
+</div>
+<div class="col-md-4">                
+                  
+            <div class="media text-left">
+              <div class="media-left">
+                <a href="http://powerofcommunity.net" target="_blank">
+                  <img class="media-object" src="./img/news/poclogo.png" width="64px" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">POC2023</h4>
+                POC Security to host POC conference on November 2~3<br>
+                <em><small>- Jan 4, 2023</small></em>
+
+              </div>
+            </div>
+                    
+</div>
+<!-- -->
+<!-- -->
+<!-- -->
+<div class="col-md-4">                
+                  
+            <div class="media text-left">
+              <div class="media-left">
+                <a href="http://powerofcommunity.net/pocevent.htm" target="_blank">
+                  <img class="media-object" src="./img/news/poxx.png" width="64px" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Power of XX</h4>
+                 POC Security to host Power of XX(Women Hacking Competition) on November 2~3<br>
+                <em><small>- January 1, 2023</small></em>
+
+              </div>
+            </div>
+                    
+</div>
+<!-- -->
+</div>
+<br><br>
+<div class="row">
+<!-- 
+<div class="col-md-4">                
+                  
+            <div class="media text-left">
+              <div class="media-left">
+                <a href="http://powerofcommunity.net/pocevent.htm" target="_blank">
+                  <img class="media-object" src="./img/news/belluminar.png" width="64px" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Belluminar</h4>
+                POC Security to host Belluminar on November 11~12<br>
+                <em><small>- Jan 4, 2021</small></em>
+
+              </div>
+            </div>
+                    
+</div>
+ -->
+<div class="col-md-4">                
+                  
+            <div class="media text-left">
+              <div class="media-left">
+                <a href="https://www.blackhat.com/us-19/briefings/schedule/speakers.html#suhee-kang-39708" target="_blank">
+                  <img class="media-object" src="./img/news/Suhee-Kang.jpg" width="64px" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Blackhat Talk</h4>
+                 Suhee Kang has talked about "Women in Security" at Blackhat USA 2019<br>
+                <em><small>- Aug 15, 2019</small></em>
+
+              </div>
+            </div>
+                    
+</div>
+<!-- -->
+
+<!-- 
+<div class="col-md-4">                
+                  
+            <div class="media text-left">
+              <div class="media-left">
+                <a href="./img/news/mosec.png" target="_blank">
+                  <img class="media-object" src="./img/news/ceo.png" width="64px" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">ETC</h4>
+                 CEO is appointed as a technical commission member of Cyber Security Sub committee of <code><a href="http://www.nirs.go.kr/" target="_blank">NIRS(NCIS)</a></code><br>
+                <em><small>- Jan 1, 2019</small></em>
+
+              </div>
+            </div>
+                    
+</div>
+ -->
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section
+    ==========================================-->
+    <div id="tf-works">
+        <div class="container"> <!-- Container -->
+            <div class="section-title text-center center">
+                <h2><strong>our services</strong></h2>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="clearfix"></div>
+                <p class="text-left">
+                <em>POC SECURITY provides best services to our clients. Below are our main services. Well-known domestic and foreign IT/security companies are our partners. If you need any support, feel free to contact us.</em>
+                </p>
+                <p class="text-left">
+                You can register our services using the button below. 
+Please follow the steps on the page to register and process your payment.<br>
+               </p> 
+<!-- <a href="payment_service.htm" target="_blank"><button type="button" class="btn btn-primary btn-lg">
+  REGISTER
+</button></a>
+-->
+            </div>
+            <div class="space"></div>
+
+            <div class="categories">
+                
+                <ul class="cat">
+                    <li class="pull-left"></li>
+                    <li class="pull-right">
+                        <ol class="type">
+                            <li><a href="#" data-filter="*" class="active">All</a></li>
+                            <li><a href="#" data-filter=".consult">Consulting</a></li>
+                            <li><a href="#" data-filter=".research">Research</a></li>
+                            <li><a href="#" data-filter=".conf" >Conference</a></li>
+                            <li><a href="#" data-filter=".training" >Training</a></li>
+                            <li><a href="#" data-filter=".etc" >ETC</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+
+
+
+            <div id="lightbox" class="row">
+
+                <div class="col-sm-6 col-md-3 col-lg-3 consult">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#"  data-toggle="modal" data-target="#gips">
+                                <div class="hover-text">
+                                    <h4>GIPS Service
+                                    </h4>
+                                    <small>Consulting</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/service1.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 research">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#vulnerability">
+                                <div class="hover-text">
+                                    <h4>Vulnerability Research</h4>
+                                    <small>Research</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/service2.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 research consult">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#pentest">
+                                <div class="hover-text">
+                                    <h4>Penetration Test</h4>
+                                    <small>Consulting</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/service3.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 consult">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#policy">
+                                <div class="hover-text">
+                                    <h4>Security Policy Establishment</h4>
+                                    <small>Consulting</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/service4.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 conf">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#poc">
+                                <div class="hover-text">
+                                    <h4>POC</h4>
+                                    <small>conference</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/poclogo.png" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 conf">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#mosec">
+                                <div class="hover-text">
+                                    <h4>MOSEC</h4>
+                                    <small>conference</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/mosec.png"" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 etc">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#belluminar">
+                                <div class="hover-text">
+                                    <h4>Belluminar</h4>
+                                    <small>ETC</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/belluminar.png" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 etc">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#pwnfest">
+                                <div class="hover-text">
+                                    <h4>Pwnfest</h4>
+                                    <small>ETC</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/pwnfest.png" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 conf">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#zer0con">
+                                <div class="hover-text">
+                                    <h4>Zer0Con</h4>
+                                    <small>conference</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/zer0con.png" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 training">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#training">
+                                <div class="hover-text">
+                                    <h4>Training Course</h4>
+                                    <small>training</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/training.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 etc">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#" data-toggle="modal" data-target="#hackingcamp">
+                                <div class="hover-text">
+                                    <h4>Hacking Camp</h4>
+                                    <small>ETC</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/services/hackingcamp.png" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -->
+
+    <!-- Modal for Services -->
+
+<!-- Modal #1 -->
+<div class="modal fade" id="gips" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">GIPS</h4>
+      </div>
+      <div class="modal-body">
+        We offer comprehensive security-related information for our clients. This service is divided as two levels. The top level of this service is only available for trusted organizations. We have a strict criteria for this service owing to some sensitive contents. If you want this service or have some questions, contact us.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal #2 -->
+<div class="modal fade" id="vulnerability" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Vulnerability Research</h4>
+      </div>
+      <div class="modal-body">
+        We will analyze your own softwares. We do source code audit and binary analysis. If you don't want to use your software which has 0-days, you need our help.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal #2 -->
+
+<!-- Modal Pentest -->
+<div class="modal fade" id="pentest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>Pentest</strong></h4>
+      </div>
+      <div class="modal-body">
+       <p class="text-left">We have a best tiger team in Korea. If you want to check the vulnerabilities in your systems, this service is for you.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Pentest End-->
+
+<!-- Modal Securitypolicy -->
+<div class="modal fade" id="policy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>Security Policy Establishment</strong></h4>
+      </div>
+      <div class="modal-body">
+       <p class="text-left">
+You don't have your security policy? Or you feel your present security policy is not enough for your organization? We will discuss together and establish the best policy fit for your organization.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal SecurityPlicy End-->
+
+<!-- Modal POC -->
+<div class="modal fade" id="poc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>POC</strong></h4>
+      </div>
+      <div class="modal-body">
+       <p class="text-center"><img src="img/services/poclogo.png" width="200" alt="..."></p><br>
+        POC started in 2006 and has been organized by Korean hackers & security experts. It is an international security & hacking conference in Korea. POC doesn't pursue money. POC concentrates on technical and creative discussion and shows real hacking and security. POC wears both black hat and white hat. POC will share knowledge for the sake of the power of community. POC believes that the power of community will make the world safer. POC has been making a history with sincere staffs, hackers from the world, and sponsors since2006. POC will be a unique conference..<br><br>
+        <a href="http://powerofcommunity.net" target="_blank">http://powerofcommunity.net</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal POC END-->
+
+<!-- Modal Mosec -->
+<div class="modal fade" id="mosec" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>MOSEC</strong></h4>
+      </div>
+      <div class="modal-body">
+       <p class="text-center"><img src="img/services/mosec.png" width="200" alt="..."></p><br>
+        The Mobile Security Conference (MOSEC) is organized by Team Pangu and PoC and was first started in 2015. MOSEC focuses on cutting-edge research topics the area of mobile security, fosters information exchange among researchers and practitioners, and received high praise from both the attendees and the community.<br><br>
+        <a href="http://mosec.org" target="_blank">http://mosec.org</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal End Mosec-->
+
+
+<!-- Modal Belluminar -->
+<div class="modal fade" id="belluminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>Belluminar</strong></h4>
+      </div>
+      <div class="modal-body">
+       <p class="text-center"><img src="img/services/belluminar.png" width="200" alt="..."></p><br>
+        Belluminar, hacking contest of POC, started at POC2015 in KOREA for the first time. Belluminar is from ‘Bellum’(war in Latin) and ‘seminar’. It is not a just hacking contest but a kind of festival consisted of CTF & seminar for the solution about challenges. Only invited teams can join Belluminar. Each team can show its ability to attack what other teams want to protect and can defend what others want to attack.<br><br>
+
+Belluminar will not be restricted in one area but emerged as a worldwide hacking event. The beginning of Belluminar seemed to be humble, so properous will the future of it be.<br><br>
+        <a href="http://belluminar.org" target="_blank">http://belluminar.org</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal End Belluminar -->
+
+
+<!-- Modal Pwnfest -->
+<div class="modal fade" id="pwnfest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>Pwnfest</strong></h4>
+      </div>
+      <div class="modal-body">
+       <p class="text-center"><img src="img/services/pwnfest_in.png" width="200" alt="..."></p><br>
+        PwnFest is a bug pwning 'festival' for better security organized by POC with the help of sponsors, vendors, and judges in 2016. You can enjoy PwnFest every year.<br><br>
+        <a href="http://zer0con.org" target="_blank">http://pwnfest.org</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Pwnfest End -->
+
+<!-- Modal Zer0Con -->
+<div class="modal fade" id="zer0con" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>Zer0Con</strong></h4>
+      </div>
+      <div class="modal-body">
+       <p class="text-center"><img src="img/services/zer0con.png" width="200" alt="..."></p><br>
+        Zer0Con is POC’s NEW ‘CLOSED’ international security conference. It focuses on finding, analyzing, and exploiting vulnerabilities. Zer0Con aims to have high-level technical presentations but avoids the commercial ones. Zer0Con doesn’t pursue money, same as POC conference.<br><br>
+        <a href="http://zer0con.org" target="_blank">http://zer0con.org</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Zer0Con End -->
+
+<!-- Modal Training -->
+<div class="modal fade" id="training" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>Training Course</strong></h4>
+      </div>
+      <div class="modal-body">
+       <p class="text-center"><img src="img/services/training.jpg" width="200" alt="..."></p><br>
+        We are preparing for update.
+You can have information of wonderful training courses soon.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Training End -->
+<!-- Modal hackingcamp -->
+<div class="modal fade" id="hackingcamp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>Hacking Camp</strong></h4>
+      </div>
+      <div class="modal-body">
+       <p class="text-center"><img src="img/services/hackingcamp.png" width="200" alt="..."></p><br>
+       해킹캠프는 해킹과 보안에 관심을 가지고 있는 국내 학생들을 위해 국제 해킹·보안 컨퍼런스 POC(POC SECURITY 주관)와 해커스쿨이 공동으로 진행하는 해킹·보안 캠프입니다.
+해킹캠프는 2009년에 시작된 국내 중·고·대학생을 대상으로 진행되는 순수 비영리 캠프로(단, 교통비, 숙박비, 식사비는 본인 부담)입니다.
+해킹캠프가 뛰어난 해커를 발굴하고 양성하는데 기여할 수 있기를 기대하며, 해킹과 보안에 관심이 있는 학생들의 많은 참여 바랍니다.<br><br>
+        <a href="http://hackingcamp.org" target="_blank">http://hackingcamp.org</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal hackingcamp End -->
+
+
+
+
+    <!-- Testimonials Section
+    ==========================================-->
+    <div id="tf-testimonials" class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2><strong>We are Hiring!</strong></h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div id="testimonial" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <p class="text-left">If you are a real hacker, join us. You can work as a part of teams or independently. And you can stay home or come to our office. The important thing is that you must deal with sensitive information with responsibility. If you are interested, send us your application form to contact [at] pocsec.com (<a href="./files/contact.asc" target="_blank">PGP key</a>). After reviewing your application, we will contact you. If you are the best, we will treat you best.</p>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  View More
+</button>
+
+
+                            </div>
+
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal for Hiring -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><strong>We are hiring!!</strong></h4>
+      </div>
+      <div class="modal-body">
+        <h3>Positions Available <br><small>
+          (Full-Time / Part-Time)</small></h3>
+          <p>- Security Researchers</p>
+<p>- Security Software Research & Development Engineers</p>
+<p>- Vulnerability Researchers</p>
+<p>- Security Consultants</p>
+<p><br><br></p>
+<h3>Required Knowledge And Skills</h3>
+          <br>
+<p>- Good knowledge of C/C++, Python programming languages and assembly</p>
+<p>- Good understanding of operating system internals and networking</p>
+<p>- Security software development experience</p>
+<p>- Experience in the malicious code analysis</p>
+<p>- Experience in forensics</p>
+<p>- Experience in vulnerability research, reverse engineering, and fuzzing</p>
+<p>- Experience in vulnerability assessment and penetration test</p>
+<p><br></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal end-->
+
+    <!-- Contact Section
+    ==========================================-->
+    <div id="tf-contact" class="text-center">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+                    <div class="section-title center">
+                        <h2><strong>contact us</strong></h2>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <div class="clearfix"></div>
+                        <p class="text-left"><em>You can contact us,
+
+to be our client / to be our researcher / to be our partner / to trade new information (0-days, new techniques, tools, etc.) with us.</em>            </p>
+                    </div>
+
+                                            <ul class="about-list text-left">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Email</strong> - <em>contact [at] pocsec.com (<a href="./files/contact.asc" target="_blank">PGP key</a>)</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>TEL</strong> - <em>+82-2-446-3156</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>FAX</strong> - <em>+82-2-446-3159</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>ADDRESS</strong> - <em>5th Floor, Owl Tower, Bangi-dong 23-2, Songpa-gu, Seoul, Korea (138-050)</em>
+                            </li>
+                        </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <nav id="footer">
+        <div class="container">
+            <div class="pull-left fnav">
+                <div class="row">
+                <div class="col-md-3">
+                <p><img src="img/mainscreen.png" width="200">
+                </p>
+                </div>
+                <div class="col-md-9">
+		    <p>상호: 피오씨시큐리티 유한책임회사(POC SECURITY LLC.) | 대표자: 정진욱 | 주소: 서울특별시 송파구 올림픽로 342, 5층(방이동, 아울타워)  | TEL:  +82-2-446-3156 | FAX: +82-2-446-3159 | 사업자등록번호: 282-86-03054 | 통신판매업신고번호: 제2023-서울송파-5277호</p>
+                    <p>Copyright © 
+
+                    <script>
+                      var i;
+                      i = new Date().getFullYear();
+                      document.write(i);
+                    </script>
+                     POC SECURITY LLC. All rights reserved.</p>
+                </div>
+                </div>
+            </div>
+            <div class="pull-right fnav">
+                <ul class="footer-social">
+                    <li><a href="https://x.com/poc_crew"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/h4ckingc4mp"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/poc_crew"><i class="fa-brands fa-instagram"></i></a></li>
+                    <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
