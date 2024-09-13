@@ -91,7 +91,8 @@ nav .logo {
 
 #main h1 {
     font-weight: normal;
-    font-size: 5rem;
+    font-size: 8rem;
+    font-family: 'Lora';
 }
 
 #main .x {
@@ -236,6 +237,7 @@ footer .logo-container {
 footer .copyright {
     color: #aaa;
     font-size: 10pt;
+    text-align: center;
 }
 
 footer img {
@@ -257,6 +259,12 @@ footer a {
 
 
 /* 반응형 */
+@media (max-width: 2000px) {
+    #main h1 { font-size: 6.5rem; }
+}
+@media (max-width: 1600px) {
+    #main h1 { font-size: 5rem; }
+}
 @media (max-width: 1000px) {
     #main .x {
         display: none;

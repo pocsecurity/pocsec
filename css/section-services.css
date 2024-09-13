@@ -46,6 +46,7 @@
 .category li .logo p {
     font-size: 30pt;
     margin: 0;
+    font-family: 'Lora';
 }
 .category li .logo img {
     max-width: 400px;
