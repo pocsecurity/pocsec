@@ -90,9 +90,9 @@ nav .logo {
 }
 
 #main h1 {
-    font-weight: normal;
+    font-weight: 500;
     font-size: 8rem;
-    font-family: 'Lora';
+    font-family: 'Nunito';
 }
 
 #main .x {
@@ -264,6 +264,9 @@ footer a {
 }
 @media (max-width: 1600px) {
     #main h1 { font-size: 5rem; }
+    #main .polygon svg {
+        zoom: 0.9;
+    }
 }
 @media (max-width: 1000px) {
     #main .x {
