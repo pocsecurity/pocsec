@@ -73,12 +73,14 @@
 /* hover시 반응 */
 .category li .logo::before {
     background-color: #000a;
-    border-radius: 10px 0 10px 0;
+    border-radius: 10px 10px 10px 0;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
+    text-align: left;
+    line-height: 1.6;
 }
 .category li .logo:hover::before {
     opacity: 1;
@@ -88,48 +90,48 @@
 
 /* 1단락 */
 .category .poc .logo::before {
-    content: 'POC is ~~~ conference.';
+    content: 'POC is an international security & hacking conference based in South Korea which focuses on highly technical academics and sharing creative discussions on latest hacking and security measures.';
     padding: 10px 20px;
 }
 .category .zc .logo::before {
-    content: 'Zer0Con is ~~~ conference.';
+    content: 'Zer0Con is ‘CLOSED’ international security conference. It focuses on finding, analyzing, and exploiting vulnerabilities. Zer0Con aims to have high-level technical presentations.';
     padding: 10px 20px;
 }
 .category .mosec .logo::before {
-    content: 'Mosec is ~~~ mobile conference.';
+    content: 'MOSEC, organized by Team Pangu and POC Security since 2015, is a premier conference on advanced mobile security research, highly regarded by experts.';
     padding: 10px 20px;
 }
 /* 2단락 */
 .category .hcamp .logo::before {
-    content: 'hackingcamp is ~~~ .';
+    content: 'Hacking Camp is a security camp for students interested in hacking and cybersecurity. Established in 2009 in collaboration with Hacker School, it aims to discover and nurture talented hackers, encouraging participation from students passionate about the field.';
     padding: 10px 20px;
 }
 .category .demon .logo::before {
-    content: 'hackingcamp is ~~~ .';
+    content: 'The demon team is an active hacking team based in South Korea, engaged in a wide range of activities from cybersecurity research to participating in and organizing various competitions, as well as conducting training in different fields.';
     padding: 10px 20px;
 }
 .category .poxx .logo::before {
-    content: 'hackingcamp is ~~~ .';
+    content: 'Power of XX is a women\'s hacking competition held in South Korea.';
     padding: 10px 20px;
 }
 .category .belluminar .logo::before {
-    content: 'hackingcamp is ~~~ .';
+    content: 'Belluminar, the hacking contest of POC, began in 2015 in Korea and combines a CTF competition with solution-focused seminars. Only invited teams participate, showcasing both offensive and defensive hacking skills. Belluminar aims to grow into a global hacking event beyond regional boundaries.';
     padding: 10px 20px;
 }
 .category .pwnfest .logo::before {
-    content: 'e is ~~~ .';
+    content: 'PwnFest is a bug pwning \'festival\' for better security organized by POC with the help of sponsors, vendors, and judges in 2016. You can enjoy PwnFest every year.';
     padding: 10px 20px;
 }
 /* 3단락 */
 .category .training .logo::before {
-    content: 'e is ~~~ .';
-    padding: 10px 20px;
+    /* content: ''; */
+    /* padding: 10px 20px; */
 }
 .category .research .logo::before {
-    content: 'e is ~~~ .';
-    padding: 10px 20px;
+    /* content: '';
+    padding: 10px 20px; */
 }
 .category .consulting .logo::before {
-    content: 'e is ~~~ .';
-    padding: 10px 20px;
+    /* content: '';
+    padding: 10px 20px; */
 }
