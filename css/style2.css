@@ -270,15 +270,12 @@ footer a {
     nav {
         padding: 10px;
     }
-    nav a.home,
+    /* nav a.home,*/
     nav .logo span {
         display: none;
     }
     #main .polygon svg {
         zoom: 0.5;
-    }
-    #main h1 {
-        font-size: 3rem;
     }
     footer .container .info {
         flex-direction: column;

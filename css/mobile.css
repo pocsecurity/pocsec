@@ -6,6 +6,7 @@
         font-size: 16pt !important;
     }
     nav {
+        position: absolute;
         width: 100%;
         box-sizing: border-box;
         padding: 0;
@@ -22,6 +23,9 @@
     nav a {
         font-size: 10pt;
     }
+    #main h1 {
+        font-size: 3rem;
+    }
     #main .polygon svg {
         zoom: 0.3;
     }
@@ -30,9 +34,7 @@
     }
     #services li .links {
         height: 80px;
-    }
-    #services li .links a {
-        font-size: 20pt;
+        gap: 20px;
     }
     /* #partners ul {
         justify-content: center;
