@@ -41,8 +41,19 @@ nav {
 nav .container {
     display: flex;
     justify-content: space-between;
+    max-width: min(1600px, calc(90%));
     align-items: center;
     margin: auto;
+    box-sizing: content-box;
+    border-radius: 100px;
+    padding: 8px 30px;
+    background-color: transparent;
+    transition: background-color 1s ease, box-shadow 0.3s ease;
+}
+
+nav .container.scrolled {
+    background-color: #fffc;
+    box-shadow: 0px 1px 5px -3px gray;
 }
 
 nav img {
@@ -109,41 +120,12 @@ nav .logo {
 
 /* main section polygon position */
 .polygon svg { position: absolute; }
-.polygon .beige {}
+.polygon .beige { left: 0; top: 0px;}
 .polygon .red { left: -300px; bottom: 100px; }
 .polygon .blue-lg { right: -300px; bottom: 200px;}
 .polygon .blue-sm { right: 80px; bottom: 600px;}
 
-/* services */
-#services {
-    background-color: #333;
-    color: white;
-    padding: 70px 40px;
-}
-#services h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-.category {
-    padding: 0;
-    margin-bottom: 40px;
-}
-.category p {
-    margin-bottom: 20px;
-}
-.category ul {
-    list-style: none;
-    padding: 0;
-    display: inline-flex;
-    flex-direction: row;
-    gap: 40px;
-}
-.category li {
-    background-color: #D3D3D3;
-    border-radius: 10px;
-    width: 400px;
-    height: 400px;
-}
+/* services -> section-services.css */
 
 
 /* partners */

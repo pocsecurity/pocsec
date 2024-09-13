@@ -1,0 +1,135 @@
+/* section Services에 필요한 css 양이 많아 분리. */
+
+#services {
+    background-color: #333;
+    color: white;
+    padding: 70px 40px;
+}
+#services h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.category {
+    padding: 0;
+    margin-bottom: 40px;
+    overflow-x: scroll;
+}
+.category p {
+    margin-bottom: 20px;
+}
+.category ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.category li {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/services/default.png');
+    border-radius: 10px;
+    width: 410px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 10px 0px #232323;
+}
+.category li .logo {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.category li .logo p {
+    font-size: 30pt;
+    margin: 0;
+}
+.category li .logo img {
+    max-width: 400px;
+}
+.category li .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+    height: 50px;
+    margin-top: -50px;
+    z-index: 1;
+}
+.category li .links a {
+    font-size: 14pt;
+    text-decoration: none;
+    color: #fff3;
+}
+.category li .links a:hover {
+    color: #fff7;
+}
+
+/* hover시 반응 */
+.category li .logo::before {
+    background-color: #000a;
+    border-radius: 10px 0 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.category li .logo:hover::before {
+    opacity: 1;
+}
+
+/* ==== 내용 작성 */
+
+/* 1단락 */
+.category .poc .logo::before {
+    content: 'POC is ~~~ conference.';
+    padding: 10px 20px;
+}
+.category .zc .logo::before {
+    content: 'Zer0Con is ~~~ conference.';
+    padding: 10px 20px;
+}
+.category .mosec .logo::before {
+    content: 'Mosec is ~~~ mobile conference.';
+    padding: 10px 20px;
+}
+/* 2단락 */
+.category .hcamp .logo::before {
+    content: 'hackingcamp is ~~~ .';
+    padding: 10px 20px;
+}
+.category .demon .logo::before {
+    content: 'hackingcamp is ~~~ .';
+    padding: 10px 20px;
+}
+.category .poxx .logo::before {
+    content: 'hackingcamp is ~~~ .';
+    padding: 10px 20px;
+}
+.category .belluminar .logo::before {
+    content: 'hackingcamp is ~~~ .';
+    padding: 10px 20px;
+}
+.category .pwnfest .logo::before {
+    content: 'e is ~~~ .';
+    padding: 10px 20px;
+}
+/* 3단락 */
+.category .training .logo::before {
+    content: 'e is ~~~ .';
+    padding: 10px 20px;
+}
+.category .research .logo::before {
+    content: 'e is ~~~ .';
+    padding: 10px 20px;
+}
+.category .consulting .logo::before {
+    content: 'e is ~~~ .';
+    padding: 10px 20px;
+}
