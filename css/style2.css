@@ -288,14 +288,3 @@ footer a {
     }
 }
 
-@media (max-width: 600px) {
-    #main .polygon svg {
-        zoom: 0.3;
-    }
-    #partners ul {
-        justify-content: center;
-    }
-    #partners li a {
-        width: 100vw;
-    }
-}

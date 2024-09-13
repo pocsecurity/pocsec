@@ -1,0 +1,57 @@
+@media (max-width: 600px) {
+    .container h1 {
+        font-size: 24pt !important;
+    }
+    .container h2 {
+        font-size: 16pt !important;
+    }
+    nav {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    nav .container {
+        max-width: 100%;
+        border-radius: 0;
+        box-sizing: border-box;
+        padding: 8px 5px;
+    }
+    nav .logo img {
+        height: 30px;
+    }
+    nav a {
+        font-size: 10pt;
+    }
+    #main .polygon svg {
+        zoom: 0.3;
+    }
+    #services li {
+        zoom: 0.6;
+    }
+    #services li .links {
+        height: 80px;
+    }
+    #services li .links a {
+        font-size: 20pt;
+    }
+    /* #partners ul {
+        justify-content: center;
+    }
+    #partners li a {
+        width: 100vw;
+    } */
+    #contact h1 {
+        gap: 10px;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    #contact h1 span {
+        font-size: 0.7rem;
+    }
+    footer p {
+        font-size: 9pt;
+    }
+    footer .copyright {
+        font-size: 8pt;
+    }
+}
