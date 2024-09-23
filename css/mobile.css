@@ -1,4 +1,7 @@
 @media (max-width: 600px) {
+    section {
+        padding: 70px 20px;
+    }
     .container h1 {
         font-size: 24pt !important;
     }
@@ -34,6 +37,9 @@
         height: 80px;
         gap: 20px;
     }
+    #services h2 {
+        margin-top: 60px;
+    }
     /* #partners ul {
         justify-content: center;
     }
@@ -47,6 +53,12 @@
     }
     #contact h1 span {
         font-size: 0.7rem;
+    }
+    footer {
+        padding: 50px 20px;
+    }
+    footer img {
+        width: 200px;
     }
     footer p {
         font-size: 7pt;
