@@ -23,12 +23,10 @@
     nav a {
         font-size: 10pt;
     }
-    #main h1 {
-        font-size: 3rem;
-    }
-    #main .polygon svg {
-        zoom: 0.3;
-    }
+    #main h1 { font-size: 12vw; }
+    /* #main .polygon svg {
+        zoom: 0.6;
+    } */
     #services li {
         zoom: 0.6;
     }
@@ -51,9 +49,9 @@
         font-size: 0.7rem;
     }
     footer p {
-        font-size: 9pt;
+        font-size: 7pt;
     }
     footer .copyright {
-        font-size: 8pt;
+        font-size: 5pt;
     }
 }

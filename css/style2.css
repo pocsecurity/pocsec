@@ -21,6 +21,7 @@ section {
     justify-content: center;
     box-sizing: border-box;
     overflow: hidden;
+    padding: 100px 70px;
 }
 .container {
     width: 100%;
@@ -91,7 +92,7 @@ nav .logo {
 
 #main h1 {
     font-weight: 500;
-    font-size: 8rem;
+    font-size: 4vw;
     font-family: 'Nunito';
 }
 
@@ -177,7 +178,6 @@ nav .logo {
 
 #contact {
     background-color: white;
-    padding: 50px 40px;
 }
 
 #contact h1 {
@@ -212,8 +212,8 @@ nav .logo {
 footer {
     background-color: #333333;
     color: #cfcfcf;
-    padding: 40px;
-    font-size: 0.875rem;
+    padding: 70px;
+    font-size: 0.75rem;
     display: flex;
     justify-content: center;
 }
@@ -236,7 +236,7 @@ footer .logo-container {
 
 footer .copyright {
     color: #aaa;
-    font-size: 10pt;
+    font-size: 0.7rem;
     text-align: center;
 }
 
@@ -249,7 +249,7 @@ footer li {
 }
 
 footer i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
 }
 footer a {
@@ -259,40 +259,26 @@ footer a {
 
 
 /* 반응형 */
-@media (max-width: 2000px) {
-    #main h1 { font-size: 6.5rem; }
-}
 @media (max-width: 1600px) {
-    #main h1 { font-size: 5rem; }
-    #main .polygon svg {
-        zoom: 0.9;
-    }
+    #main h1 { font-size: 5vw; }
+    #main .x { width: 40%; }
+    #main .polygon svg { zoom: 0.9; }
 }
 @media (max-width: 1000px) {
-    #main .x {
-        display: none;
-    }
-    #main .polygon svg {
-        zoom: 0.7;
-    }
+    #main h1 { font-size: 8vw; }
+    #main .x { display: none; }
+    #main .polygon svg { zoom: 0.7; }
 }
-
-@media (max-width: 800px) {
-    nav {
+@media (max-width: 700px) {
+    /* nav {
         padding: 10px;
     }
-    /* nav a.home,*/
+    nav a.home,*/
     nav .logo span {
         display: none;
     }
-    #main .polygon svg {
-        zoom: 0.5;
-    }
-    footer .container .info {
-        flex-direction: column;
-    }
-    #partners li a {
-        zoom: 0.8
-    }
+    #main .polygon svg { zoom: calc(0.57); }
+    footer .container .info { flex-direction: column; }
+    #partners li a { zoom: 0.8; }
 }
 
